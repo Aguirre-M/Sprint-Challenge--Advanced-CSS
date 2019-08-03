@@ -1,1 +1,18 @@
 // Mixins Here
+.display{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.navlinks {
+    text-decoration: none;
+    font-size: 1.6rem;
+}
+
+//Parametric Mixins
+.btn-layout (@bg-color, @txt-color) {
+    background-color: @bg-color;
+    color: @txt-color;
+    radius: 5px;
+
+}
