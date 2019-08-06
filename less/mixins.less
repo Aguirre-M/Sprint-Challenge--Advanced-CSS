@@ -10,9 +10,16 @@
 }
 
 //Parametric Mixins
-.btn-layout (@bg-color, @txt-color) {
+.btn-layout(@bg-color, @txt-color){
     background-color: @bg-color;
     color: @txt-color;
-    radius: 5px;
-
+    border-radius: 5px;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: @wild-sand;
+        color: @btn-bg-color;
+    }
 }
